@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="scrypt.js"></script>
     <title>Cálculo IMC</title>
 </head>
 
@@ -16,17 +17,18 @@
         <form action="">
             <div class="container-calculadora-peso">
                 <p>Digite seu peso:</p>
-                <input type="number" class="input-number">
+                <input type="number" id="peso" class="input-number">
                 <span>Kg</span>
             </div>
 
             <div class="container-calculadora-altura">
                 <p>Digite sua altura:</p>
-                <input type="number" class="input-number">
+                <input type="number" id="altura" class="input-number">
                 <span>cm</span>
             </div>
-            <input type="button" class="botao-calcular" value="Calcular">
+            <input type="button" id="btnCalcular" onclick="calculoIMC()" class="botao-calcular" value="Calcular">
         </form>
+        <div id="resultado"></div>
     </div>
 </body>
 
