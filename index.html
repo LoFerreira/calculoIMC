@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 
     <title>Cálculo IMC</title>
+
+    <script src="scrypt.js"></script>
 </head>
 
 <body>
@@ -29,10 +31,9 @@
             <input type="button" id="btnCalcular" onclick="calculoIMC()" class="botao-calcular" value="Calcular">
         </form>
         <div id="resultado"></div>
-        <button id="reset">Recomeçar</button>
+        <input type="button" id="reset" onclick="limpar()" value="Recomeçar">
     </div>
 
-    <script src="scrypt.js"></script>
 </body>
 
 </html>

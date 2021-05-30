@@ -40,7 +40,7 @@ function calculoIMC() {
 
 const reset = document.getElementById("reset");
 
-function clear() {
+function limpar() {
     document.getElementById("peso").value = "";
     document.getElementById("altura").value = "";
     resultado.classList.remove("resultado-red");
@@ -48,5 +48,3 @@ function clear() {
     resultado.classList.remove("resultado-yellow");
     resultado.textContent = "";
 }
-
-reset.addEventListener('click', clear());
